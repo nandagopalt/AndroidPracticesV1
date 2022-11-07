@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_16sdp"
+    android:orientation="vertical"
+    tools:context=".EnterDetailsFragment">
+
+    <TextView
+        android:id="@+id/tv_enter_details_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Enter the details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_32sdp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Associate name"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:textColorHint="#e2e2e2"
+            android:textSize="@dimen/_16sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <EditText
+            android:id="@+id/et_designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Associate Designation"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black"
+            android:textColorHint="#e1e1e1"
+            android:textSize="@dimen/_16sdp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_enter_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Verify Details"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>
