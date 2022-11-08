@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -55,8 +54,12 @@ class EnterDetailsFragment : Fragment() {
                         R.id.action_enterDetailsFragment_to_verifyDetailsFragment,
                         bundle
                     )*/
-
-                    EnterDetailsFragmentDirections.actionEnterDetailsFragmentToVerifyDetailsFragment(name, designation)
+                    findNavController().navigate(
+                        EnterDetailsFragmentDirections.actionEnterDetailsFragmentToVerifyDetailsFragment(
+                            name,
+                            designation
+                        )
+                    )
                 }
             }
         }
